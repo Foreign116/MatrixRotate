@@ -21,9 +21,9 @@ def rotatematrix90(matrix):
 			matrix[last-x][first]  = matrix[last][last-x]
 			matrix[last][last-x]   = matrix[first+x][last]
 			matrix[first+x][last]  = temp
-		first = first + 1 # inner first index
-		last = last - 1 # inner last index -1, cause we handle the last index in the beginning we don't have to handle it again
-		loop = loop - 2 # how many times it loops, every time we go inward lenth decreases by two
-		i = i + 1 # incrementing how many times we loop
+		first = first + 1  # inner first index
+		last = last - 1    # inner last index -1, cause we handle the last index in the beginning we don't have to handle it again
+		loop = loop - 2    # how many times it loops, every time we go inward lenth decreases by two
+		i = i + 1          # incrementing how many times we loop
 
 rotatematrix90(matrix)
